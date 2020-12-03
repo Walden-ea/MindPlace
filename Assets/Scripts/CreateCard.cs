@@ -12,16 +12,14 @@ public class CreateCard : MonoBehaviour
    [SerializeField]InputField field;
     void Start()
     {
-       // Window.SetActive(false);
+       Window.SetActive(false);
     }
 
     public void SomeMethod()
     {
         GameObject newCard = Instantiate(cardPrefab, new Vector3(2.0F, 0, 0), Quaternion.identity) as GameObject;
         GameObject textSideOne = GameObject.Find("FirstSideText");
-        textSideOne.GetComponent<Text>().text = field.text;
-        //string s = field.text;
-        //textSideOne.text = "help me";
+        textSideOne.GetComponent<TextMeshPro>().text = field.text;
     }
 
     public void FillCard(GameObject card)
