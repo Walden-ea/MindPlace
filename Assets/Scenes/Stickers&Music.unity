@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8a09e5333a4ad46aa1a057f9875df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stickerPrefab: {fileID: 399719467290608761, guid: 84371b7ebd1674148856263cb0cfd7e9, type: 3}
+  stickerPrefab: {fileID: 632193971623722510, guid: 6a5ea75318bbff34c99ba63bd1ef4f54, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
