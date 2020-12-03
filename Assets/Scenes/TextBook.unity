@@ -227,8 +227,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 158975088}
+  - component: {fileID: 158975089}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ReminderControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,12 +243,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158975087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81907105, y: -10.629853, z: 12.302171}
+  m_LocalPosition: {x: -0.81907105, y: -6.79, z: 13.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &158975089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158975087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d87b6f833438a449e44a50ec4e77c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reminder: 
+  reminder1: 
+  reminderBoard: {fileID: 1788569859}
+  timeText: {fileID: 506508999}
+  myTime: 10
+  current: 0
+  newTime: 30
 --- !u!1 &260750745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1398,7 +1418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 291, y: 101.6}
+  m_AnchoredPosition: {x: 291, y: 101.600006}
   m_SizeDelta: {x: 116.83942, y: -6.978363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665400235
@@ -1451,7 +1471,6 @@ GameObject:
   - component: {fileID: 1788569862}
   - component: {fileID: 1788569861}
   - component: {fileID: 1788569860}
-  - component: {fileID: 1788569864}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1539,22 +1558,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1788569864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788569859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d87b6f833438a449e44a50ec4e77c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reminder: 
-  reminderBoard: {fileID: 1788569859}
-  myTime: 10
-  current: 0
 --- !u!1 &1833473348
 GameObject:
   m_ObjectHideFlags: 0
