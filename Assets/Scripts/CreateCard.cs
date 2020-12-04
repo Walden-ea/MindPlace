@@ -26,7 +26,12 @@ public class CreateCard : MonoBehaviour
 
     }
 
-    public void Awake()
+    public void CloseWindow()
+    {
+        Window.SetActive(false);
+    }
+
+    public void OnMouseDown() 
     {
         Window.SetActive(true);
     }

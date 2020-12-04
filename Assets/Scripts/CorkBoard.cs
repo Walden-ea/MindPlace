@@ -24,7 +24,7 @@ public class CorkBoard : MonoBehaviour
 
     private void OnMouseDown() {
 
-        if (count < 2)
+        if (count < 4 )
         {
             Instantiate(stickerPrefab,GetStickerPosition(),default(Quaternion));
         Debug.Log("created");
@@ -35,7 +35,9 @@ public class CorkBoard : MonoBehaviour
     Vector3 GetStickerPosition()
     {
         count++;
-        return position.position + new Vector3(-position.localScale.x/3+0.3f*count , position.localScale.y/10, -position.localScale.z);
+        Debug.Log(position.position);
+       // return position.position + new Vector3(-position.localScale.x/3+0.3f*count , position.localScale.y/10, -position.localScale.z);
+       return position.position + new Vector3(0.3f*count,-3f,2.91f);
         
     }
     
