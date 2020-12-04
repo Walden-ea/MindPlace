@@ -190,8 +190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -463.46, y: 171.43}
-  m_SizeDelta: {x: 100.58984, y: 94.63736}
+  m_AnchoredPosition: {x: -784, y: -350}
+  m_SizeDelta: {x: 100.58984, y: 144.63615}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89427260
 MonoBehaviour:
@@ -300,6 +300,18 @@ PrefabInstance:
     - target: {fileID: 3192478132767120490, guid: bbdeb5e10d99c8748b2ee6f0341309fc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192478132767120491, guid: bbdeb5e10d99c8748b2ee6f0341309fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 642397116}
+    - target: {fileID: 3192478132767120491, guid: bbdeb5e10d99c8748b2ee6f0341309fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 3192478132767120491, guid: bbdeb5e10d99c8748b2ee6f0341309fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3192478132803133600, guid: bbdeb5e10d99c8748b2ee6f0341309fc, type: 3}
       propertyPath: m_AnchoredPosition.x
