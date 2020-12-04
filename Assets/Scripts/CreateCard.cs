@@ -18,7 +18,7 @@ public class CreateCard : MonoBehaviour
 
     public void SomeMethod()
     {
-        GameObject newCard = Instantiate(cardPrefab, new Vector3(2.0F, 0, 0), Quaternion.identity) as GameObject;
+        GameObject newCard = Instantiate(cardPrefab, new Vector3(10.58f, 0, -2.593f), Quaternion.identity) as GameObject;
         GameObject textSideOne = GameObject.Find("FirstSideText");
         textSideOne.GetComponent<TextMeshPro>().text = FirstSideInput.text;
         GameObject textSideTwo = GameObject.Find("SecondSideText");
