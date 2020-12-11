@@ -271,6 +271,7 @@ MonoBehaviour:
   emis: 1
   MaterialEmissionOn: {fileID: 2100000, guid: d0c703fdc903a97468afe196c6607bdf, type: 2}
   MaterialEmissionOff: {fileID: 2100000, guid: 4218b61df6bbc0a44919b134204b8a56, type: 2}
+  ButtonNotUI: Jump
 --- !u!135 &1919128930
 SphereCollider:
   m_ObjectHideFlags: 0

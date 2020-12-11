@@ -9,14 +9,14 @@ public class EnableEmission : MonoBehaviour
     private MeshRenderer ren;
     public Material MaterialEmissionOn;
     public Material MaterialEmissionOff;
+    public string ButtonNotUI;
+
 
     // Start is called before the first frame update
     void Start()
     {
         Renderer ren = GetComponent<MeshRenderer>();
         ren.material = MaterialEmissionOff;
-        emis = false;
-
     }
     // Update is called once per frame
     void Update()
@@ -28,15 +28,6 @@ public class EnableEmission : MonoBehaviour
         else 
             ren.material = MaterialEmissionOff;
 
-
-        if (Input.GetKeyDown(KeyCode.Space))    // изменить клавишу       
-            emis = true;
-        
-        if(Input.GetKeyUp(KeyCode.Space))      // изменить клавишу   
-            emis = false;
-        
-
-
-
+        emis = Input.GetButton(ButtonNotUI);
     }
 }
