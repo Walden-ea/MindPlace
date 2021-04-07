@@ -16,12 +16,12 @@ public class sc : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))   //если клавиша нажата
         {
-            Debug.Log("Space key is pressed.");
+            //Debug.Log("Space key is pressed.");
             gameObject.GetComponent<Renderer>().material.color = Krug;
         }
         else                            //если не нажата
         {
-            Debug.Log("Space key is  not pressed.");
+            //Debug.Log("Space key is  not pressed.");
             gameObject.GetComponent<Renderer>().material.color = self;
         }
 
