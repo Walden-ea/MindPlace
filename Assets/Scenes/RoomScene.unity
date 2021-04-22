@@ -5000,6 +5000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1567064257776623364, guid: 56beaeb244b71d840b3da14a4bdb5c02, type: 3}
+      propertyPath: m_Name
+      value: Plinth
+      objectReference: {fileID: 0}
     - target: {fileID: 4694226987009217739, guid: 56beaeb244b71d840b3da14a4bdb5c02, type: 3}
       propertyPath: Canvas
       value: 
