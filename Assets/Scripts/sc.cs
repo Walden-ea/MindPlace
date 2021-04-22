@@ -21,7 +21,6 @@ public class sc : MonoBehaviour
         }
         else                            //если не нажата
         {
-            Debug.Log("Space key is  not pressed.");
             gameObject.GetComponent<Renderer>().material.color = self;
         }
 
