@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Sticker : MonoBehaviour
 {
@@ -19,8 +20,11 @@ public class Sticker : MonoBehaviour
 
     private void OnMouseDown() {
         //CameraMovement.StartMoving();
-        CameraMovement.moving = true;
-        Debug.Log("start moving");
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            CameraMovement.moving = true;
+            Debug.Log("start moving");
+        }
     }
 
 }
