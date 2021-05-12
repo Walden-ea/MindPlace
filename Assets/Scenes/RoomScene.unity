@@ -959,7 +959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &484249780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,6 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d69b28245c630245899e47ddca8a4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myBookWriter: {fileID: 0}
 --- !u!1 &707727937 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3061667732240880940, guid: b3c6b0a0de1506a43a12f0221bf7419f, type: 3}
@@ -1525,7 +1526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &791440776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,7 +1678,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ea8363a9cc906e647babd7a48adb6a25, type: 2}
     - target: {fileID: -1018664272722485354, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -804731622281664130, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1767,7 +1768,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff48181e50763b04d91cba5f6a917174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &870566341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1780,7 +1784,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff48181e50763b04d91cba5f6a917174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &930405354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1582123322081663497, guid: db3011c3b9303db4f8585a7edf33c6d7, type: 3}
@@ -2209,7 +2216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1582123322081663497, guid: db3011c3b9303db4f8585a7edf33c6d7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6717873216045069129, guid: db3011c3b9303db4f8585a7edf33c6d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2278,7 +2285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1114395125
 Light:
   m_ObjectHideFlags: 0
@@ -2493,7 +2500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6424206322587643916, guid: 313d5cbd8e5c5cd408a3aadbb5f5367e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 313d5cbd8e5c5cd408a3aadbb5f5367e, type: 3}
@@ -2533,7 +2540,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &1271218676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2743,7 +2750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061667731576163580, guid: b3c6b0a0de1506a43a12f0221bf7419f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3061667731576163581, guid: b3c6b0a0de1506a43a12f0221bf7419f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3466,7 +3473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff48181e50763b04d91cba5f6a917174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: []
 --- !u!114 &1462810115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5101,7 +5108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8956065176517172565, guid: 7f3d12d8fd042c440b94d26dae067246, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3d12d8fd042c440b94d26dae067246, type: 3}
@@ -5139,7 +5146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1632938196
 Light:
   m_ObjectHideFlags: 0
@@ -5413,6 +5420,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 870566341}
+        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
+        m_MethodName: sub1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 870566340}
+        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
+        m_MethodName: sub1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 870566341}
+        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
+        m_MethodName: sub2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 870566340}
+        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
+        m_MethodName: sub2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1668224478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5464,7 +5519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6205455315877395151, guid: 403156c34057d8e4ebf13260b64605ad, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6548055096376733984, guid: 403156c34057d8e4ebf13260b64605ad, type: 3}
       propertyPath: m_Size.x
@@ -5735,7 +5790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3672471056549861359, guid: ba37f7fcfe8110441a953f89dd0168ec, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5922220019191607755, guid: ba37f7fcfe8110441a953f89dd0168ec, type: 3}
       propertyPath: m_LocalPosition.x

@@ -5,8 +5,8 @@ using UnityEngine;
 public class SubjectsButton : MonoBehaviour
 {
     MeshRenderer meshRender;
-    public Texture text;
-    // Start is called before the first frame update
+    public Texture[] text = new Texture[3];
+    
     void Start()
     {
         meshRender = GetComponent<MeshRenderer>();
@@ -15,6 +15,14 @@ public class SubjectsButton : MonoBehaviour
    
      public void sub()
     {
-        meshRender.material.SetTexture("_MainTex", text);
+        meshRender.material.SetTexture("_MainTex", text[1]);
+    }
+    public void sub1()
+    {
+        meshRender.material.SetTexture("_MainTex", text[2]);
+    }
+    public void sub2()
+    {
+        meshRender.material.SetTexture("_MainTex", text[3]);
     }
 }
