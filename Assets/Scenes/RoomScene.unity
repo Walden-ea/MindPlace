@@ -2217,7 +2217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1582123322081663497, guid: db3011c3b9303db4f8585a7edf33c6d7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6717873216045069129, guid: db3011c3b9303db4f8585a7edf33c6d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2751,7 +2751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3061667731576163580, guid: b3c6b0a0de1506a43a12f0221bf7419f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3061667731576163581, guid: b3c6b0a0de1506a43a12f0221bf7419f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5098,7 +5098,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8956065176517172565, guid: 7f3d12d8fd042c440b94d26dae067246, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3d12d8fd042c440b94d26dae067246, type: 3}
@@ -5410,45 +5410,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 870566341}
+      - m_Target: {fileID: 2046298951}
         m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
-        m_MethodName: sub1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 870566340}
-        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
-        m_MethodName: sub1
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 870566341}
-        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
-        m_MethodName: sub2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 870566340}
-        m_TargetAssemblyTypeName: SubjectsButton, Assembly-CSharp
-        m_MethodName: sub2
+        m_MethodName: sub
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5685,6 +5649,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2924021687236591752, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
   m_PrefabInstance: {fileID: 870566337}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2046298947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4340398839122283160, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
+  m_PrefabInstance: {fileID: 870566337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2046298951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046298947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff48181e50763b04d91cba5f6a917174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 2800000, guid: 1b8271f4aeb49be4aad9a3f45da26c61, type: 3}
+  - {fileID: 2800000, guid: 03aba175dbb4b1749b5945db511e4bdf, type: 3}
+  - {fileID: 2800000, guid: 616defb3f0f16b944a9dbdea67364046, type: 3}
+  - {fileID: 2800000, guid: d988d6c10f7269e4d9f046a1977ce41d, type: 3}
 --- !u!1 &2081660923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3757055723159920028, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
