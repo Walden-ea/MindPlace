@@ -5,7 +5,7 @@ using UnityEngine;
 public class SubjectsButton : MonoBehaviour
 {
     MeshRenderer meshRender;
-    public Texture[] text = new Texture[3];
+    public Texture[] text = new Texture[4];
     
     void Start()
     {
@@ -15,13 +15,17 @@ public class SubjectsButton : MonoBehaviour
    
      public void sub()
     {
-        meshRender.material.SetTexture("_MainTex", text[1]);
+        meshRender.material.SetTexture("_MainTex", text[0]);
     }
     public void sub1()
     {
-        meshRender.material.SetTexture("_MainTex", text[2]);
+        meshRender.material.SetTexture("_MainTex", text[1]);
     }
     public void sub2()
+    {
+        meshRender.material.SetTexture("_MainTex", text[2]);
+    }
+    public void sub3()
     {
         meshRender.material.SetTexture("_MainTex", text[3]);
     }
