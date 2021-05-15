@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System.Threading;
 
 public class ListRotation : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class ListRotation : MonoBehaviour
     public GameObject list3;
     public GameObject list4;
     int a = 0;
+    public float counter = 0f;
+    public float wait = 2000f;
     //float k = 0f;
     List<GameObject> allPages = new List<GameObject>();
 
@@ -46,7 +49,7 @@ public class ListRotation : MonoBehaviour
     {
         if (Input.GetKeyDown("q"))
         {
-            StartCoroutine("Rotate"); 
+            StartCoroutine("Rotate");
         }
     }
 }
