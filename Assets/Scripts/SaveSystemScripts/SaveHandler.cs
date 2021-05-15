@@ -5,7 +5,14 @@ using UnityEngine.UI;
 
 public class SaveHandler : MonoBehaviour {
     private static string userInput;
+    private string _id;
     public InputField inputField;
+
+        public string id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
 
     public void recieveAndSaveStringInput(string input)
     {
@@ -15,6 +22,7 @@ public class SaveHandler : MonoBehaviour {
     
     }
     private void Awake() {
+        _id = gameObject.transform.parent.name;
         SaveSystem.Init();
         Debug.Log(userInput);
         Load();
@@ -33,14 +41,14 @@ public class SaveHandler : MonoBehaviour {
 
         string json = JsonUtility.ToJson(saveObject);
         Debug.Log(json +"saveHJson");
-        SaveSystem.Save(json,"butt.txt");
+        SaveSystem.Save(json,$"{id}.txt");
 
         Debug.Log("Saved!");
     }
 
     private void Load() {
         // Load
-        string saveString = SaveSystem.Load("butt.txt");
+        string saveString = SaveSystem.Load($"{id}.txt");
         if (saveString != null) 
         {
            Debug.Log("Loaded: " + saveString);
@@ -52,7 +60,6 @@ public class SaveHandler : MonoBehaviour {
             {
                 inputField.text = userInput;
             }
-            //Debug.Log(userInput);
 
         }
          else
@@ -64,5 +71,7 @@ public class SaveHandler : MonoBehaviour {
 
     private class SaveObject {
         public string userInputSave;
+
+
     }
 }
