@@ -6,7 +6,7 @@ public class SubjectsButton : MonoBehaviour
 {
     MeshRenderer meshRender;
     public Texture[] text = new Texture[4];
-     public int c;
+     public int c = 0;
     void Start()
     {
         meshRender = GetComponent<MeshRenderer>();
@@ -16,7 +16,7 @@ public class SubjectsButton : MonoBehaviour
      public void sub()
     {
       
-    meshRender.material.SetTexture("_MainTex", text[c]);
+    meshRender.material.SetTexture("_MainTex", text[c%4]);
         c++;
     }
    /* public void sub1()
