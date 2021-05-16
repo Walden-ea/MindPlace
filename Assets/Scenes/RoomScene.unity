@@ -1704,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1b4843707c103064bbadfa0b9dc784e0, type: 2}
+    - target: {fileID: -2628795798268836724, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9107e293c595d664db6c1dc78493b93f, type: 2}
     - target: {fileID: -2345581320212614887, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1744,6 +1748,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a802bf8f24e32cd4b85a0731b9374498, type: 2}
+    - target: {fileID: 7267448852160599995, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 606d264d657828e4f8d67f57fef85975, type: 2}
     - target: {fileID: 7579409191754587916, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1762,11 +1770,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1b4843707c103064bbadfa0b9dc784e0, type: 2}
     - target: {fileID: 8632055958874330854, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.868
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 8632055958874330854, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.426
+      value: 3.54
       objectReference: {fileID: 0}
     - target: {fileID: 8632055958874330854, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_LocalScale.x
@@ -1782,7 +1790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8632055958874330854, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.079
+      value: -0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd08f7c9523103a46b391f57e7405177, type: 3}
@@ -5869,7 +5877,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 606d264d657828e4f8d67f57fef85975, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
