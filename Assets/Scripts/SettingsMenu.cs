@@ -9,10 +9,10 @@ public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] GameObject Window;
     [SerializeField] GameObject settingsButton;
-    public AudioSource audioScr;
+    public AudioMixer audioMixer;
     public void SetVolume(float volume)
     {
-        audioScr.volume = volume;
+        audioMixer.SetFloat("volume", volume);
     }
 
     public void Start()

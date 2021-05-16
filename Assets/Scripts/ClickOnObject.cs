@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
 
 public class ClickOnObject : MonoBehaviour
@@ -16,9 +17,11 @@ public class ClickOnObject : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-
-        canvas.SetActive(true);
-        print("Click");
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            canvas.SetActive(true);
+            print("Click");
+        }
     }
 }
 

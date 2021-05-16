@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class CreateCard : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class CreateCard : MonoBehaviour
 
     public void OnMouseDown() 
     {
-        Window.SetActive(true);
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            Window.SetActive(true);
+        }
     }
 
 

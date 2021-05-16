@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    
-    [SerializeField] GameObject Object;
-    Vector3 destinationPoint = new Vector3(0,0,-0.7f);
-    float smoothing = 0.5f;
+    Vector3 destinationPoint = new Vector3(-1.765809f,4.952399f,5.671323f);
+    float smoothing = 1f;
 
    static public bool moving = false;
 
@@ -15,19 +13,23 @@ public class CameraMovement : MonoBehaviour
     {
         moving = true;
     }
-
-    void Update() {
-        StartCoroutine(LerpFromTo(transform.position, destinationPoint, 1f) );
+void Update()
+{
+    if (moving)//Плавное "скольжение" из одной точки в другую
+    {
+        float rotateX = Random.Range (0, 50);
+        Debug.Log("should move");
+        //transform.position = Vector3.Lerp (transform.position, destinationPoint, smoothing * Time.deltaTime);
+        Vector3 lerp = new Vector3(20f, 180f, -1f);
+        //transform.eulerAngles = lerp;
+        transform.Rotate(lerp, 10.0f * Time.deltaTime);
+        Debug.Log("MOVE ALREADY");
     }
-
-    IEnumerator LerpFromTo(Vector3 pos1, Vector3 pos2, float duration) {
-     for (float t=0f; t<duration; t += Time.deltaTime) {
-    transform.position = Vector3.Lerp(pos1, pos2, t / duration);
-    yield return 0;
+}
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
-    transform.position = pos2;
-    }
-
-
 
 }
