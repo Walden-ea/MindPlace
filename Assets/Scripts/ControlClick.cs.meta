@@ -3,7 +3,8 @@ guid: 0d69b28245c630245899e47ddca8a4af
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - myBookWriter: {fileID: 4780393353535920388, guid: 97df832dd56f2e146a7424cc3dee4992, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
