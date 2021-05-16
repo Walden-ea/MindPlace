@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 
- 
+
 public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] GameObject Window;
     [SerializeField] GameObject settingsButton;
-    public AudioMixer audioMixer;
+    public AudioSource audioScr;
     public void SetVolume(float volume)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioScr.volume = volume;
     }
 
     public void Start()
@@ -29,8 +29,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void QuitMenu()
     {
-         Window.SetActive(false);
-         settingsButton.SetActive(true);
+        Window.SetActive(false);
+        settingsButton.SetActive(true);
     }
     public void Quit()
     {
