@@ -5,12 +5,25 @@ using UnityEngine.EventSystems;
 
 public class Sticker : MonoBehaviour
 {
-    [SerializeField] GameObject inputfield;
+     [SerializeField] GameObject inputfield;
     
     bool created = false;
 
+    MeshRenderer meshRender;
+
     GameObject newcanv;
 
+     public Texture[] text = new Texture[18];
+
+
+ void Start()
+    {
+        var rand = Random.Range(0,17);
+        //meshRender = GetComponent<MeshRenderer>();
+       //meshRender.material.SetTexture("_MainTex", text[rand]);
+       transform.FindChild("paper.007").GetComponent<MeshRenderer>().material.SetTexture("_MainTex", text[rand]);   
+
+    }
     private void OnMouseDown() {
        /* if(!created)
         {
