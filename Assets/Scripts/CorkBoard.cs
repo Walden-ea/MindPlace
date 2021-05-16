@@ -9,7 +9,9 @@ public class CorkBoard : MonoBehaviour
     int count;
     [SerializeField] GameObject stickerPrefab;
     Transform position; 
+    [SerializeField] Camera _camera;
     
+    int i = 0;
     void Start()
     {
         count = -1;
@@ -24,10 +26,16 @@ public class CorkBoard : MonoBehaviour
 
     private void OnMouseDown() {
 
-        if (count < 4 )
+        if (count < 4 &&(!CameraMovement.moving))
         {
-            Instantiate(stickerPrefab,GetStickerPosition(),default(Quaternion));
-        Debug.Log("created");
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                GameObject s = Instantiate(stickerPrefab, new Vector3(hit.point.x, hit.point.y,-3.07f), Quaternion.identity);
+                s.name = "sticker"+i;
+                i++;
+            }
         }
         else Debug.Log("enough for now");
     } 

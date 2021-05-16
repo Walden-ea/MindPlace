@@ -44,9 +44,9 @@ public class calendar_button : MonoBehaviour
 
         button.text = "" + (number + 1 - num);
         if ((number - num) + 1 <= 0)
-            button.text = "";
+            Destroy(gameObject);
         if ((number - num) + 1 > dayinnowmonth)
-            button.text = "";
+            Destroy(gameObject);
 
 
     }

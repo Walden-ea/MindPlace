@@ -6,10 +6,11 @@ public class SubjectsButton : MonoBehaviour
 {
     MeshRenderer meshRender;
     public Texture[] text = new Texture[4];
-     public int c = 0;
+     public int c = 1;
     void Start()
     {
         meshRender = GetComponent<MeshRenderer>();
+        meshRender.material.SetTexture("_MainTex", text[0]);
     }
 
    
