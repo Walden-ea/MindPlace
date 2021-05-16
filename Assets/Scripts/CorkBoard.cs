@@ -25,7 +25,7 @@ public class CorkBoard : MonoBehaviour
 
     private void OnMouseDown() {
 
-        if (count < 4 )
+        if (count < 4 &&(!CameraMovement.moving))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
              RaycastHit hit;

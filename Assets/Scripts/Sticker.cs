@@ -7,17 +7,6 @@ public class Sticker : MonoBehaviour
 {
     [SerializeField] GameObject inputfield;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnMouseDown() {
         /*GameObject newcanv = Instantiate(inputfield, transform.position, transform.rotation);
