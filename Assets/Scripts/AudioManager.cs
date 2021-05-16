@@ -1,13 +1,10 @@
 ﻿using Unity.Audio;
 using UnityEngine;
 using System;
-using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
-    public Sound[] sounds;
-
-    public Slider volumeSlider;
+    public Sound[] sounds;// Start is called before the first frame update
     void Awake()
     {
         foreach (Sound s in sounds)
@@ -19,8 +16,6 @@ public class AudioManager : MonoBehaviour
             s.source.loop = s.loop;
 
         }
-
-        volumeSlider.value = volumeSlider.maxValue/3;
     }
 
    

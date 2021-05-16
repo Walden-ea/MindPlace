@@ -19,33 +19,63 @@ public class InstantiateOfBook : MonoBehaviour
     public GameObject writer8;
     public GameObject writer9;
     public GameObject writer10;
-    public void OnMouseDown( )
-    {
-        bookMenu.SetActive(true);
 
-        writer1.SetActive(true);
-        writer2.SetActive(true);
-        //writer3 = GameObject.Find("Writer3");
-        writer3.SetActive(false);
-        //writer4 = GameObject.Find("Writer4");
-        writer4.SetActive(false);
-        //writer5 = GameObject.Find("Writer5");
-        writer5.SetActive(false);
-        //writer6 = GameObject.Find("Writer6");
-        writer6.SetActive(false);
-        //writer7 = GameObject.Find("Writer7");
-        writer7.SetActive(false);
-        //writer8 = GameObject.Find("Writer8");
-        writer8.SetActive(false);
-        //writer9 = GameObject.Find("Writer9");
-        writer9.SetActive(false);
-        //writer10 = GameObject.Find("Writer10");
-        writer10.SetActive(false);
-    }
+    //Дополнительные листы
+    public GameObject writer1a;
+    public GameObject writer2a;
+    public GameObject writer3a;
+    public GameObject writer4a;
+    public GameObject writer5a;
+    public GameObject writer6a;
+    public GameObject writer7a;
+    public GameObject writer8a;
+    public GameObject writer9a;
+    public GameObject writer10a;
+
+    //Кнопка добавления листика
+    public GameObject ButtonPlus;
+
+    //Объект и скрипт, где находятся необходимые переменные
+    public GameObject ControlerOfBook;
+    public AddList addList;
+
+    public void OnMouseDown()
+    {
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            bookMenu.SetActive(true);
+
+            writer1.SetActive(true);
+            writer2.SetActive(true);
+            writer3.SetActive(false);
+            writer4.SetActive(false);
+            writer5.SetActive(false);
+            writer6.SetActive(false);
+            writer7.SetActive(false);
+            writer8.SetActive(false);
+            writer9.SetActive(false);
+            writer10.SetActive(false);
+
+            writer1a.SetActive(false);
+            writer2a.SetActive(false);
+            writer3a.SetActive(false);
+            writer4a.SetActive(false);
+            writer5a.SetActive(false);
+            writer6a.SetActive(false);
+            writer7a.SetActive(false);
+            writer8a.SetActive(false);
+            writer9a.SetActive(false);
+            writer10a.SetActive(false);
+
+            if (addList.l12 == true)
+                ButtonPlus.SetActive(false);
+        }
+}
 
     // Start is called before the first frame update
     void Start()
     {
+        addList = ControlerOfBook.gameObject.GetComponent<AddList>();
         bookMenu.SetActive(false);
     }
 
