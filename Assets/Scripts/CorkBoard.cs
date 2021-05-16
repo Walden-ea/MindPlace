@@ -11,6 +11,7 @@ public class CorkBoard : MonoBehaviour
     Transform position; 
     [SerializeField] Camera _camera;
     
+    int i = 0;
     void Start()
     {
         count = -1;
@@ -31,8 +32,9 @@ public class CorkBoard : MonoBehaviour
              RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-                Instantiate(stickerPrefab, new Vector3(hit.point.x, hit.point.y,-3.07f), Quaternion.identity);
-                 Debug.Log(transform.position);
+                GameObject s = Instantiate(stickerPrefab, new Vector3(hit.point.x, hit.point.y,-3.07f), Quaternion.identity);
+                s.name = "sticker"+i;
+                i++;
             }
         }
         else Debug.Log("enough for now");

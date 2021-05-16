@@ -7,14 +7,30 @@ public class Sticker : MonoBehaviour
 {
     [SerializeField] GameObject inputfield;
     
+    bool created = false;
+
+    GameObject newcanv;
 
     private void OnMouseDown() {
-        /*GameObject newcanv = Instantiate(inputfield, transform.position, transform.rotation);
-        newcanv.transform.SetParent(GameObject.FindGameObjectWithTag("canvas").transform, false);
-        newcanv.SetActive(true);*/
+       /* if(!created)
+        {
+            newcanv = Instantiate(inputfield, transform.position, transform.rotation);
+            newcanv.transform.SetParent(GameObject.FindGameObjectWithTag("canvas").transform, false);
+            newcanv.SetActive(true);
+            created = true;
+        }
+        else
+        {
+            newcanv.SetActive(true);
+        }*/
 
-        CameraMovement.moving = true;
-        Debug.Log("start moving");
+       CameraMovement.moving = true;
+        
+           }
+
+    public void close()
+    {
+        newcanv.SetActive(false);
     }
 
 }
