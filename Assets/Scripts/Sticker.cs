@@ -29,7 +29,7 @@ public class Sticker : MonoBehaviour
         //Debug.Log(CameraMovement.isCloseUp);
         if (CameraMovement.isCloseUp)
         {
-        if(!created)
+        /*if(!created)
             {
             
                 newcanv = Instantiate(inputfield, transform.position, transform.rotation);
@@ -41,7 +41,7 @@ public class Sticker : MonoBehaviour
             else
             {
                 newcanv.SetActive(true);
-            }
+            }*/
         }
         else {
             CameraMovement.moving = true;
